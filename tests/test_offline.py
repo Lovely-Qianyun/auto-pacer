@@ -41,7 +41,7 @@ class TestPureFunctions:
         assert app.normalize_user("a@b.com") == "a@b.com"
 
     def test_desensitize_masks(self):
-        assert app.desensitize("13800000") == "138****8000"
+        assert app.desensitize("13800008000") == "138****8000"
         out = app.desensitize("example@example.com")
         assert "example@example.com" not in out
 
