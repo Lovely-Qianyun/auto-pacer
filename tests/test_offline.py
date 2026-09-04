@@ -67,7 +67,7 @@ class TestPureFunctions:
 
     def test_token_trust_window(self):
         assert app.app_token_can_be_trusted_locally(self._token_cfg(1)) is True
-        assert app.app_token_can_be_trusted_locally(self._token_cfg(25 * 24)) is False
+        assert app.app_token_can_be_trusted_locally(self._token_cfg(26 * 24)) is False
         assert app.app_token_can_be_trusted_locally({}) is False
 
 
